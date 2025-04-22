@@ -1,0 +1,138 @@
+h1 {
+  color: black;
+}
+#square {
+  height: 500px;
+  width: 500px;
+  position: static;
+  background-color: black;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+h2 {
+  color: red;
+}
+
+#wheel {
+  background-color: white;
+  height: 500px;
+  width: 500px;
+}
+
+#circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  left: 40%;
+  top: 40%;
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: black;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-play-state: running;
+  }
+
+  #line1 {
+    animation-name: example1;
+  }
+  #line2 {
+    animation-name: example2;
+    transform: rotate(30deg);
+  }
+  #line3 {
+    animation-name: example3;
+    transform: rotate(60deg);
+  }
+  #line4 {
+    animation-name: example4;
+    transform: rotate(90deg);
+  }
+
+  #line5 {
+    animation-name: example5;
+    transform: rotate(120deg);
+  }
+  #line6 {
+    animation-name: example6;
+    transform: rotate(150deg);
+  }
+}
+
+@keyframes example1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes example2 {
+  from {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(210deg);
+  }
+}
+
+@keyframes example3 {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(240deg);
+  }
+}
+
+@keyframes example4 {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes example5 {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(300deg);
+  }
+}
+
+@keyframes example6 {
+  from {
+    transform: rotate(150deg);
+  }
+  to {
+    transform: rotate(330deg);
+  }
+}
+
+@keyframes example7 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
